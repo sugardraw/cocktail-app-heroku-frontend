@@ -4,7 +4,7 @@ import axios from "axios";
 export const getCocktails = ingredient => dispatch => {
     console.log("action",ingredient);
      axios
-        .get(`http://localhost:3001/api/cocktails/get-matches/?name=${ingredient}`)
+        .get(`https://damp-sea-45813.herokuapp.com/api/cocktails/get-matches/?name=${ingredient}`)
         .then(data => {
             console.log('axios', data.data);
             dispatch({
@@ -23,7 +23,7 @@ export const getCocktails = ingredient => dispatch => {
 export const getAll = () => dispatch => {
     console.log("axios");
     axios
-        .get("http://localhost:3001/api/cocktails/list")
+        .get("https://damp-sea-45813.herokuapp.com/api/cocktails/list")
         .then( data => {
             console.log('axios', data.data);
             dispatch({

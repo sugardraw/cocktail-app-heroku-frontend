@@ -93,7 +93,7 @@ class PostACocktail extends Component {
 
     axios({
       method: "post",
-      url: "http://localhost:3001/api/cocktails/save",
+      url: "https://damp-sea-45813.herokuapp.com/api/cocktails/save",
       data
     }).then(response => {
       if (response.status === 200) {

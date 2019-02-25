@@ -14,7 +14,7 @@ class cocktailsListAll extends Component {
 
   componentDidMount() {
     axios
-      .get(`http://localhost:3001/api/cocktails/list`)
+      .get(`https://damp-sea-45813.herokuapp.com/api/cocktails/list`)
       .then(data => {
         console.log(data.data);
         this.setState({
@@ -37,7 +37,7 @@ class cocktailsListAll extends Component {
                 <div className="mt-2">
                   <img
                     width="250px"
-                    src={"http://localhost:3001/images/" + item.image.filename}
+                    src={"https://damp-sea-45813.herokuapp.com/images/" + item.image.filename}
                     alt="img"
                   />
                 </div>

@@ -29,7 +29,7 @@ class SignUp extends Component {
   submit = e => {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/api/users/signup", this.state)
+      .post("https://damp-sea-45813.herokuapp.com/api/users/signup", this.state)
       .then(res => {
         console.log(res);
 

@@ -22,7 +22,7 @@ class ShowAll extends Component {
                 <div className="mt-2">
                   <img
                     width="250px"
-                    src={"http://localhost:3001/images/" + cocktail.image.filename}
+                    src={"https://damp-sea-45813.herokuapp.com/images/" + cocktail.image.filename}
                     alt="img"
                   />
                 </div>

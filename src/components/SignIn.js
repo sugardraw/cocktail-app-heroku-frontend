@@ -21,7 +21,7 @@ class SingIn extends Component {
 
   componentDidMount() {
     axios
-      .post("http://localhost:3001/api/users/check-token", {
+      .post("https://damp-sea-45813.herokuapp.com/api/users/check-token", {
         token: this.state.token
       })
       .then(res => {

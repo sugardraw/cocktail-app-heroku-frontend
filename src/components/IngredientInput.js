@@ -10,7 +10,7 @@ class IngredientInput extends Component {
   }
 
   componentDidMount() {
-    axios.get("http://localhost:3001/api/ingredients/all").then(data => {
+    axios.get("https://damp-sea-45813.herokuapp.com/api/ingredients/all").then(data => {
       this.setState({
         categories: data.data
       });

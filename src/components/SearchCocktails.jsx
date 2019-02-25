@@ -20,7 +20,7 @@ class SearchCocktails extends Component {
   changeHander = e => {
     axios
       .get(
-        `http://localhost:3001/api/cocktails/get-matches/?name=${
+        `https://damp-sea-45813.herokuapp.com/api/cocktails/get-matches/?name=${
           e.target.value
         }`
       )

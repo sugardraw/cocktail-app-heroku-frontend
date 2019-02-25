@@ -20,7 +20,7 @@ class DisplayCocktailCard extends Component {
                     <img
                       width="250px"
                       src={
-                        "http://localhost:3001/images/" +
+                        "https://damp-sea-45813.herokuapp.com/images/" +
                         cocktail.image.filename
                       }
                       alt="img"
